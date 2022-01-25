@@ -3,12 +3,12 @@ import 'package:flutter/material.dart';
 class Homepage extends StatelessWidget {
   final int days = 30;
   final String name = 'Codepur';
-
+  // This widget is the root of your application.
   @override
-  Widget build(BuildContext) {
+  Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Catalog App")
+        title: Text("Catalog App"),
       ),
       body: Center(
         child: Container(
