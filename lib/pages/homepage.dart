@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors, avoid_renaming_method_parameters, non_constant_identifier_names, avoid_types_as_parameter_names, avoid_unnecessary_containers
 
 import 'package:flutter/material.dart';
+import 'package:flutter_app/widgets/drawer.dart';
 
 class Homepage extends StatelessWidget {
    const Homepage({Key? key}) : super(key: key);
@@ -18,7 +19,7 @@ class Homepage extends StatelessWidget {
           child: Text("Welcome to $days days of flutter by $name"),
         ),
       ),
-      drawer: Drawer(),
+      drawer: Mydrawer(),
     );
   }
 }
