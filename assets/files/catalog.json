@@ -1,0 +1,68 @@
+{
+   "products":[
+	{
+		"id": 1,
+		"name": "iPhone 12 pro",
+		"desc": "Apple iPhone 12th generation",
+		"price": 999,
+		"color": "#4645ab",
+		"image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9LUtcJ7duKEwHKibZVcHrVOA0SZl-I6TGPY4gSdinQCy-y7ksCHbH7xYFlm7XrfBYmX4&usqp=CAU"
+	},
+	{
+		"id": 2,
+		"name": "iPad Pro",
+		"desc": "Apple iPad 5th generation",
+		"price": 1099,
+		"color": "#33505a",
+		"image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX8Q_Xk2Qw2b63dpEC61q_TZ1VJqI1kuWFTfiJi6zPYDLO8DpiA0Cg9jX0FptZkbeyxOM&usqp=CAU"
+	},
+	{
+		"id": 3,
+		"name": "Pixel 5",
+		"desc": "Google pixel 5th generation",
+		"price": 699,
+		"color": "#00ac51",
+		"image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuTIgZ24EeeaZWApXxQ3IQueraUY7i7vKjEw&usqp=CAU"
+	},
+	{
+		"id": 4,
+		"name": "Playstation 5",
+		"desc": "Sony Playstation 5th generation",
+		"price": 1099,
+		"color": "#544ee4",
+		"image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsYi2cCzBumgSNEv4AeO8XXkOVmeVMlLCMCw&usqp=CAU"
+	},
+	{
+		"id": 5,
+		"name": "M1 Macbook Air",
+		"desc": "Apple Mackbook Air with apple silicon",
+		"price": 1099,
+		"color": "#e0bfae",
+		"image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyzJkukr2GPCmrlQtNZzYuhy6BSxZW0vFjmw&usqp=CAU"
+	},
+	{
+		"id": 6,
+		"name": "Airpods pro",
+		"desc": "Apple Airpods pro 1st generation",
+		"price": 200,
+		"color": "#e3e4e9",
+		"image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTTP-5tmAYgjhd-1vDUHOPd7_kbWeBhVkOuQ&usqp=CAU"
+	},
+	{
+		"id": 7,
+		"name": "Galaxy S21 Ultra",
+		"desc": "Samsung Galaxy S21 Ultra 2021 Edition",
+		"price": 1299,
+		"color": "#1c1c1c",
+		"image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXUMCIF8MCAh-Il3trUWbu_SwtjtwUujWF1g&usqp=CAU"
+	},
+	{
+		"id": 8,
+		"name": "Galaxy S21",
+		"desc": "Samsung Galaxy S21 2021 Edition",
+		"price": 899,
+		"color": "#7c95eb",
+		"image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIpqp60LiOWwen4Rxsk7yyPAESAwKi-vDZbA&usqp=CAU"
+	}
+   ]
+   }
