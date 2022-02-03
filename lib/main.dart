@@ -1,4 +1,5 @@
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: prefer_const_constructors, unused_import, avoid_web_libraries_in_flutter
+// @dart=2.9
 
 import 'package:flutter/material.dart';
 import 'package:flutter_app/pages/homepage.dart';
@@ -11,7 +12,7 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+  const MyApp({Key key}) : super(key: key);
 
   // This widget is the root of your application.
   @override

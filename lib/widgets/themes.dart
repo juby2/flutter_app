@@ -1,11 +1,12 @@
+// ignore_for_file: prefer_const_constructors, duplicate_ignore, use_full_hex_values_for_flutter_colors
+
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-
 class MyTheme {
-  static ThemeData  lightTheme(BuildContext context) => ThemeData(
+  static ThemeData lightTheme(BuildContext context) => ThemeData(
       primarySwatch: Colors.deepPurple,
-      fontFamily: GoogleFonts.lato().fontFamily,
+      fontFamily: GoogleFonts.poppins().fontFamily,
       appBarTheme: AppBarTheme(
           color: Colors.white,
           elevation: 0.0,
@@ -14,11 +15,13 @@ class MyTheme {
             color: Colors.black,
           ),
           toolbarTextStyle: Theme.of(context).textTheme.bodyText2,
-          titleTextStyle: Theme.of(context).textTheme.headline6)
-          );
+          titleTextStyle: Theme.of(context).textTheme.headline6));
 
-  static ThemeData  darkTheme(BuildContext context) => ThemeData(
-     brightness: Brightness.dark
-  );
+  static ThemeData darkTheme(BuildContext context) =>
+      ThemeData(brightness: Brightness.dark);
+
+  // color
+
+  static Color creamColor = Color(0xfff5f5f5);
+  static Color darkBluishColor = Color(0xfff403b58);
 }
-
