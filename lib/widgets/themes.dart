@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors, duplicate_ignore, use_full_hex_values_for_flutter_colors, import_of_legacy_library_into_null_safe
+// ignore_for_file: prefer_const_constructors, duplicate_ignore, use_full_hex_values_for_flutter_colors, import_of_legacy_library_into_null_safe, deprecated_member_use
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -14,6 +14,7 @@ class MyTheme {
        canvasColor: creamColor,
        // ignore: deprecated_member_use
        buttonColor: darkBluishColor,
+       accentColor: darkBluishColor,
       appBarTheme: AppBarTheme(
           color: Colors.white,
           elevation: 0.0,
@@ -33,6 +34,7 @@ class MyTheme {
          canvasColor: darkcreamColor,
          // ignore: deprecated_member_use
          buttonColor: lightBluishColor,
+         accentColor: lightBluishColor,
       appBarTheme: AppBarTheme(
           color: Colors.black,
           elevation: 0.0,
