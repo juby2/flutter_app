@@ -1,8 +1,7 @@
 // ignore_for_file: import_of_legacy_library_into_null_safe, implementation_imports
 
 import 'package:flutter/material.dart';
-// ignore: unused_import
-import 'package:flutter_app/main.dart';
+
 import 'package:flutter_app/widgets/themes.dart';
 import 'package:velocity_x/src/extensions/string_ext.dart';
 

@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors, avoid_renaming_method_parameters, non_constant_identifier_names, avoid_types_as_parameter_names, avoid_unnecessary_containers, override_on_non_overriding_member, avoid_print, unused_local_variable, unnecessary_null_comparison, unused_import, import_of_legacy_library_into_null_safe, prefer_const_literals_to_create_immutables, avoid_web_libraries_in_flutter
+// ignore_for_file: prefer_const_constructors, avoid_renaming_method_parameters, non_constant_identifier_names, avoid_types_as_parameter_names, avoid_unnecessary_containers, override_on_non_overriding_member, avoid_print, unused_local_variable, unnecessary_null_comparison, unused_import, import_of_legacy_library_into_null_safe, prefer_const_literals_to_create_immutables, avoid_web_libraries_in_flutter, deprecated_member_use
 
 import 'dart:convert';
 
@@ -50,10 +50,10 @@ class _HomepageState extends State<Homepage> {
   Widget build(BuildContext) {
     // final dummyList = List.generate(5, (index) => CatalogModel.items[0]);
     return Scaffold(
-      backgroundColor: MyTheme.creamColor,
+      backgroundColor: context.canvasColor,
       floatingActionButton: FloatingActionButton(onPressed:
        () => Navigator.pushNamed(context, MyRoutes.cartRoute),
-      backgroundColor: MyTheme.darkBluishColor,
+      backgroundColor:context.theme.buttonColor,
       child: Icon(CupertinoIcons.cart),),
       body: SafeArea(
         child: Container(

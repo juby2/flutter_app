@@ -1,9 +1,19 @@
-// ignore_for_file: avoid_renaming_method_parameters
+// ignore_for_file: avoid_renaming_method_parameters, use_function_type_syntax_for_parameters
 
 import 'dart:convert';
 
+import 'package:flutter/cupertino.dart';
+
 class CatalogModel {
-  static List<Item> items=[];
+  static List<Item> items = [];
+
+  // Get items by Id
+
+  static Item getById(int id) =>
+      // ignore: null_closures
+      items.firstWhere((element) => element.id == id, orElse: null);
+
+ static Item getByPosition(int pos) => items[pos];
 }
 
 class Item {
@@ -27,9 +37,9 @@ class Item {
     int? id,
     String? name,
     String? desc,
-    num ?price,
-    String ?color,
-    String ?image,
+    num? price,
+    String? color,
+    String? image,
   }) {
     return Item(
       id: id ?? this.id,
@@ -53,7 +63,6 @@ class Item {
   }
 
   factory Item.fromMap(Map<String, dynamic> map) {
-   
     return Item(
       id: map['id'],
       name: map['name'],
@@ -95,6 +104,4 @@ class Item {
         color.hashCode ^
         image.hashCode;
   }
-
- 
 }
