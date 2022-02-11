@@ -1,27 +1,25 @@
 // ignore_for_file: unnecessary_null_comparison, file_names, unused_field
 
+import 'package:flutter_app/store/store.dart';
+import 'package:velocity_x/velocity_x.dart';
+
 import 'catalog.dart';
 
 class CartModel {
-  static final cartModel = CartModel.internal();
- CartModel.internal();
-  factory CartModel() => cartModel;
   // catalog field
-   late CatalogModel _catalog;
+  late CatalogModel _catalog;
 
   // Collection of IDs - store Ids of each item
- 
+
   final List<int> _itemIds = [];
 
-  
-
   // Get Catalog
-  CatalogModel get catalog => _catalog; 
+  CatalogModel get catalog => _catalog;
 
-  set catalog(CatalogModel newCatalog){
-    
+  set catalog(CatalogModel newCatalog) {
     _catalog = newCatalog;
   }
+
 //   // Get items in the cart
   List<Item> get items => _itemIds.map((id) => _catalog.getById(id)).toList();
 
@@ -40,7 +38,14 @@ class CartModel {
   void remove(Item item) {
     _itemIds.remove(item.id);
   }
+}
 
- 
+class AddMutation extends VxMutation<MyStore> {
+  final Item item;
 
- }
+  AddMutation(this.item);
+  @override
+  perform() {
+    store.cart._itemIds.add(item.id);
+  }
+}
