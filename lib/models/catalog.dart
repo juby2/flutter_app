@@ -5,14 +5,25 @@ import 'dart:convert';
 import 'package:flutter/cupertino.dart';
 
 class CatalogModel {
+  static final catModel = CatalogModel.internal();
+  CatalogModel.internal();
+  factory CatalogModel() => catModel;
+
+  
   static List<Item> items = [];
+
+  
 
   // Get items by Id
  Item getById(int id) =>
       // ignore: null_closures
       items.firstWhere((element) => element.id == id, orElse: null);
 
-  Item getByPosition(int pos) => items[pos];
+ Item getByPosition(int pos) => items[pos];
+
+  void add(Item catalog) {}
+
+  
 }
 
 class Item {
