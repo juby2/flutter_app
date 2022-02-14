@@ -1,4 +1,4 @@
-// ignore_for_file: unnecessary_null_comparison, file_names, unused_field
+// ignore_for_file: unnecessary_null_comparison, file_names, unused_field, unnecessary_getters_setters
 
 import 'package:flutter_app/store/store.dart';
 import 'package:velocity_x/velocity_x.dart';
@@ -46,6 +46,6 @@ class AddMutation extends VxMutation<MyStore> {
   AddMutation(this.item);
   @override
   perform() {
-    store.cart._itemIds.add(item.id);
+    store?.cart._itemIds.add(item.id);
   }
 }

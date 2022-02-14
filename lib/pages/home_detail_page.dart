@@ -16,6 +16,8 @@ class HomeDetailPage extends StatelessWidget {
   // ignore: unnecessary_null_comparison
   :assert (catalog!= null), super(key: key);
 
+  get captionStyle => null;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -53,12 +55,11 @@ class HomeDetailPage extends StatelessWidget {
                     child: Column(
                        children: [
                           catalog.name.text.xl4.color(MyTheme.darkBluishColor).bold.make(),
-                          catalog.desc.text.xl.textStyle(context.captionStyle).make(),
+                          catalog.desc.text.xl.caption(context).make(),
                           10.heightBox,
                           "Sit eos lorem vero ipsum et sed rebum, et duo nonumy diam et eos, est diam ut vero vero. Nonumy ipsum sed sit stet magna, rebum dolor justo et et. Magna amet at clita sanctus ipsum, ea gubergren duo sed sea erat. Dolores lorem dolor accusam ut magna, vero sit."
                           .text
-                          .textStyle(context.captionStyle)
-                          .make()
+                          .caption(context).make()
                           .p8()
                        ],
                     ).py64()

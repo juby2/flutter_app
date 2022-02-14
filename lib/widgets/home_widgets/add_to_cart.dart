@@ -1,4 +1,4 @@
-// ignore_for_file: import_of_legacy_library_into_null_safe, prefer_const_constructors, unused_local_variable, non_constant_identifier_names
+// ignore_for_file: import_of_legacy_library_into_null_safe, prefer_const_constructors, unused_local_variable, non_constant_identifier_names, prefer_const_constructors_in_immutables
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -18,10 +18,10 @@ class AddToCart extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    VxState.listen(context, to: [AddMutation]);
+    VxState.watch(context, on: [AddMutation]);
     final CartModel _cart = (VxState.store as MyStore).cart;
     
-    bool isInCart = _cart.items.contains(catalog) ?? false;
+    bool isInCart = _cart.items.contains(catalog);
     IconData? CuppertinoIcons;
     return ElevatedButton(
         onPressed: () {

@@ -23,8 +23,9 @@ class MyTheme {
             color: Colors.black,
             
           ),
-          toolbarTextStyle: Theme.of(context).textTheme.bodyText2,
-          titleTextStyle: Theme.of(context).textTheme.headline6));
+          textTheme: Theme.of(context).textTheme,
+            
+         ));
 
   static ThemeData darkTheme(BuildContext context) =>
       ThemeData(
@@ -35,16 +36,19 @@ class MyTheme {
          // ignore: deprecated_member_use
          buttonColor: lightBluishColor,
          accentColor: lightBluishColor,
-      appBarTheme: AppBarTheme(
-          color: Colors.black,
-          elevation: 0.0,
+         appBarTheme: AppBarTheme(
+            color: Colors.black,
+         elevation: 0.0,
           // ignore: prefer_const_constructors
-          iconTheme: IconThemeData(
+         iconTheme: IconThemeData(
             color: Colors.black,
             
           ),
-          toolbarTextStyle: Theme.of(context).textTheme.bodyText2,
-          titleTextStyle: Theme.of(context).textTheme.headline6));
+          textTheme: Theme.of(context).textTheme.copyWith(
+              headline6:
+                  context.textTheme.headline6?.copyWith(color: Colors.white),
+            ),
+         ));
       
 
   // color

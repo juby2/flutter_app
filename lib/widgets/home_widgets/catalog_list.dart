@@ -3,7 +3,6 @@
 // ignore: unused_import
 
 import 'package:flutter/material.dart';
-import 'package:flutter_app/models/cart..dart';
 import 'package:velocity_x/velocity_x.dart';
 
 import 'package:flutter_app/models/catalog.dart';
@@ -58,7 +57,7 @@ class CatalogItem extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             catalog.name.text.lg.color(MyTheme.darkBluishColor).bold.make(),
-            catalog.desc.text.textStyle(context.captionStyle).make(),
+            catalog.desc.text.caption(context).make(),
             10.heightBox,
             ButtonBar(
               alignment: MainAxisAlignment.spaceBetween,

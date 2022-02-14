@@ -5,12 +5,6 @@ import 'package:flutter_app/models/cart..dart';
 import 'package:flutter_app/store/store.dart';
 
 import 'package:flutter_app/widgets/themes.dart';
-import 'package:velocity_x/src/extensions/context_ext.dart';
-import 'package:velocity_x/src/extensions/string_ext.dart';
-import 'package:velocity_x/src/flutter/center.dart';
-import 'package:velocity_x/src/flutter/padding.dart';
-import 'package:velocity_x/src/flutter/sizedbox.dart';
-import 'package:velocity_x/src/flutter/widgets.dart';
 import 'package:velocity_x/velocity_x.dart';
 
 class CartPage extends StatelessWidget {
